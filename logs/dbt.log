@@ -1,14 +1,14 @@
 
 
-============================== 2022-07-20 16:23:55.460197 | 6f990647-a368-4710-9099-ee6abcd53bcc ==============================
-16:23:55.460197 [info ] [MainThread]: Running with dbt=1.1.1
-16:23:55.462194 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Samrit\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'dbt', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-16:23:55.462194 [debug] [MainThread]: Tracking: tracking
-16:23:55.497255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C1DFBCC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C1DFBCBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C1DFBCB20>]}
-16:23:55.499198 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Samrit\.dbt
-16:23:55.502202 [debug] [MainThread]: Starter project path: C:\Python310\lib\site-packages\dbt\include\starter_project
-16:33:27.654907 [info ] [MainThread]: Profile dbt written to C:\Users\Samrit\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
-16:33:27.656909 [info ] [MainThread]: 
+============================== 2022-07-20 20:26:05.248346 | 57ecf9a1-aefc-4b2d-b086-25d1947aa802 ==============================
+20:26:05.248346 [info ] [MainThread]: Running with dbt=1.0.8
+20:26:05.249346 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='C:\\Users\\Samrit\\.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+20:26:05.251347 [debug] [MainThread]: Tracking: tracking
+20:26:05.284344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B003D2580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B003D28E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B003D2670>]}
+20:26:05.286347 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Samrit\.dbt
+20:26:23.569230 [debug] [MainThread]: Starter project path: C:\ProgramData\Miniconda3\lib\site-packages\dbt\include\starter_project
+20:26:31.572115 [info ] [MainThread]: Profile dbt written to C:\Users\Samrit\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+20:26:31.575120 [info ] [MainThread]: 
 Your new dbt project "dbt" was created!
 
 For more information on how to configure the profiles.yml file,
@@ -24,4 +24,5 @@ Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
 
 Happy modeling!
 
-16:33:27.662952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C1DFBCBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C1DFBC580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C1DFBC8E0>]}
+20:26:31.579118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B004ABD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B004AB100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B004AB160>]}
+20:26:37.484231 [warn ] [MainThread]: Error sending message, disabling tracking
