@@ -11,14 +11,12 @@ dag = DAG('load-data',
 create_table = MySqlOperator(dag=dag,
                            mysql_conn_id='mysql-connect', 
                            task_id='create_table',
-                            sql='create_table.sql')
-
+                            sql='./mysql_schema/create_table.sql')
 
 
 load_data = MySqlOperator(dag=dag,
                            mysql_conn_id='mysql-connect', 
                            task_id='load_data',
-                            sql='load_data.sql')
-
+                            sql='./mysql_schema/load_data.sql')
 
 create_table >> load_data 
