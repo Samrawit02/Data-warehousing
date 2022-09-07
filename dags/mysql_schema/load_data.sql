@@ -1,4 +1,4 @@
-LOAD DATA LOCAL INFILE '/usr/local/airflow/data/data.csv'
+LOAD DATA LOCAL INFILE '/usr/local/airflow/dags/data.csv'
 INTO TABLE trafic
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'

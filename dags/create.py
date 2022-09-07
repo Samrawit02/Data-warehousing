@@ -17,7 +17,7 @@ dag = DAG(
 
 check_file = BashOperator(
     task_id="check_file",
-    bash_command= "shasum /usr/local/airflow/data/data.csv",
+    bash_command="shasum ~/dags/data.csv",
     retries=2,
     retry_delay=timedelta(seconds=15),
     dag=dag

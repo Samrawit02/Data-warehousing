@@ -1,0 +1,25 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: localhost
+      username: root
+      password: root
+      port: 3306
+      schema: analytics
+      threads: 4
+
+dbt:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: 127.0.0.1
+      port: 3306  # optional
+      database: analtics # optional, should be same as schema
+      username: root
+      password: root
+      threads: 4
+      driver: MySQL ODBC 8.0 ANSI Driver
+    
