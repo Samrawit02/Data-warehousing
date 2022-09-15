@@ -2,7 +2,7 @@ data
 
 logs/scheduler
 logs
-airflow
+airflow/dags
 .env
 redash/.env
 plugins
