@@ -6,10 +6,8 @@ A data pipeline for Extracting, Loading and Transforming traffic data
 
   <p align="center">
     A ELT pipeline using mysql, dbt, Apache Airflow, and Redash.
-    <br />
+    <br />  
    
-    <br />
-    <br />
   </p>
 </p>
 
@@ -30,9 +28,7 @@ A data pipeline for Extracting, Loading and Transforming traffic data
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -41,9 +37,9 @@ A data pipeline for Extracting, Loading and Transforming traffic data
 
 ## About The Project
 
-![ELT](screenshots/elt_pipeline.png)
 
-A completely dockerized ELT pipeline with PostgreSQL for data storage, Airflow for automation and orchestration, DBT for data transformation, and a Redash dashboard connected to the data warehouse.
+
+A  ELT pipeline with MySql for data storage, Airflow for automation and orchestration, DBT for data transformation, and a Redash dashboard connected to the data warehouse.
 
 ### Built With
 
