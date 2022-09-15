@@ -3,3 +3,6 @@ data
 logs/scheduler
 logs
 airflow
+.env
+redash/.env
+plugins

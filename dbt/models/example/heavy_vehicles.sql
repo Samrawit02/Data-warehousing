@@ -1,1 +1,1 @@
-select * from analytics.trafic where type = 'Heavy Vehicle'
+select * from analytics.trafic_data where type = 'Heavy Vehicle'

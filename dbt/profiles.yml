@@ -17,7 +17,7 @@ dbt:
       type: mysql
       server: 127.0.0.1
       port: 3306  # optional
-      database: analtics # optional, should be same as schema
+      database: analytics # optional, should be same as schema
       username: root
       password: root
       threads: 4

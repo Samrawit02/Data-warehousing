@@ -2,11 +2,11 @@ version: 2
 
 sources:
     - name: analytics
-      database: analytics
+      # database: analytics
       schema: analytics
 
       tables:
-          - name: trafic
+          - name: trafic_data
 
 models:
     - name: taxis
