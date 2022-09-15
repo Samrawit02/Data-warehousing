@@ -1,0 +1,26 @@
+[2022-09-05 10:07:25,972] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_tables.test scheduled__2022-09-04T00:00:00+00:00 [queued]>
+[2022-09-05 10:07:25,998] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_tables.test scheduled__2022-09-04T00:00:00+00:00 [queued]>
+[2022-09-05 10:07:25,998] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-05 10:07:25,999] {taskinstance.py:1377} INFO - Starting attempt 5 of 5
+[2022-09-05 10:07:26,013] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-05 10:07:26,080] {taskinstance.py:1397} INFO - Executing <Task(MySqlOperator): test> on 2022-09-04 00:00:00+00:00
+[2022-09-05 10:07:26,087] {standard_task_runner.py:52} INFO - Started process 676 to run task
+[2022-09-05 10:07:26,093] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'create_tables', 'test', 'scheduled__2022-09-04T00:00:00+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/create.py', '--cfg-path', '/tmp/tmpw7dqqhwk', '--error-file', '/tmp/tmpalaead1k']
+[2022-09-05 10:07:26,094] {standard_task_runner.py:80} INFO - Job 71: Subtask test
+[2022-09-05 10:07:26,266] {task_command.py:371} INFO - Running <TaskInstance: create_tables.test scheduled__2022-09-04T00:00:00+00:00 [running]> on host 613319c2eb0f
+[2022-09-05 10:07:26,487] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=create_tables
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=5
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-04T00:00:00+00:00
+[2022-09-05 10:07:26,488] {mysql.py:82} INFO - Executing: SHOW VARIABLES LIKE "secure_file_priv";
+[2022-09-05 10:07:26,510] {base.py:68} INFO - Using connection ID 'mysql_conn_id' for task execution.
+[2022-09-05 10:07:27,156] {dbapi.py:231} INFO - Running statement: SHOW VARIABLES LIKE "secure_file_priv";, parameters: None
+[2022-09-05 10:07:28,377] {dbapi.py:239} INFO - Rows affected: 1
+[2022-09-05 10:07:28,435] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=create_tables, task_id=test, execution_date=20220904T000000, start_date=20220905T100725, end_date=20220905T100728
+[2022-09-05 10:07:28,528] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-05 10:07:28,804] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

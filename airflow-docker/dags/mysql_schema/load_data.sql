@@ -1,6 +1,0 @@
-LOAD DATA LOCAL INFILE  
-'Data-warehousing\data\20181024_d1_0830_0900.csv'
-INTO TABLE trafic_data  
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n';

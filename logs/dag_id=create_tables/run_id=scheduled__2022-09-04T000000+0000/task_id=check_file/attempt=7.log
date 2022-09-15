@@ -1,0 +1,34 @@
+[2022-09-05 09:53:46,033] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_tables.check_file scheduled__2022-09-04T00:00:00+00:00 [queued]>
+[2022-09-05 09:53:46,063] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: create_tables.check_file scheduled__2022-09-04T00:00:00+00:00 [queued]>
+[2022-09-05 09:53:46,064] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-05 09:53:46,064] {taskinstance.py:1377} INFO - Starting attempt 7 of 9
+[2022-09-05 09:53:46,065] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-05 09:53:46,154] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): check_file> on 2022-09-04 00:00:00+00:00
+[2022-09-05 09:53:46,182] {standard_task_runner.py:52} INFO - Started process 123 to run task
+[2022-09-05 09:53:46,188] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'create_tables', 'check_file', 'scheduled__2022-09-04T00:00:00+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/create.py', '--cfg-path', '/tmp/tmp7yqy9zg8', '--error-file', '/tmp/tmphd9r1x74']
+[2022-09-05 09:53:46,190] {standard_task_runner.py:80} INFO - Job 37: Subtask check_file
+[2022-09-05 09:53:46,601] {task_command.py:371} INFO - Running <TaskInstance: create_tables.check_file scheduled__2022-09-04T00:00:00+00:00 [running]> on host 613319c2eb0f
+[2022-09-05 09:53:47,234] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=create_tables
+AIRFLOW_CTX_TASK_ID=check_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=7
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-04T00:00:00+00:00
+[2022-09-05 09:53:47,236] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-05 09:53:47,238] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'shasum ~/data/20181024_d1_0830_0900.csv']
+[2022-09-05 09:53:47,396] {subprocess.py:85} INFO - Output:
+[2022-09-05 09:53:50,548] {subprocess.py:92} INFO - shasum: /home/***/data/20181024_d1_0830_0900.csv: No such file or directory
+[2022-09-05 09:53:50,730] {subprocess.py:96} INFO - Command exited with return code 1
+[2022-09-05 09:53:50,831] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-09-05 09:53:50,858] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=create_tables, task_id=check_file, execution_date=20220904T000000, start_date=20220905T095346, end_date=20220905T095350
+[2022-09-05 09:53:50,943] {standard_task_runner.py:97} ERROR - Failed to execute job 37 for task check_file (Bash command failed. The command returned a non-zero exit code 1.; 123)
+[2022-09-05 09:53:50,977] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-09-05 09:53:51,176] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
